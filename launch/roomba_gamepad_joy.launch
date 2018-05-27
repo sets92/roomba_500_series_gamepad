@@ -1,0 +1,11 @@
+ <launch>
+  <node pkg="joy" type="joy_node" name="joy_node"/>
+
+	<node pkg="roomba_500_series_gamepad" type="roomba_500_series_gamepad_node" name="roomba_gamepad">
+    <param name="translational_speded_axis" value="1" />
+    <param name="translational_speed_scaling_factor" value="1" />
+    <param name="rotational_speed_axis" value="2" />
+    <param name="rotational_speed_scaling_factor" value="1" />
+    <param name="command_topic_name" value="cmd_vel" />
+	</node>
+</launch>
